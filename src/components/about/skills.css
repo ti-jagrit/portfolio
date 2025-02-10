@@ -1,0 +1,127 @@
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    background-color: rgb(25,25,25);
+    padding: 8px;
+    border: 1px solid gray;
+    border-style: inset;
+    border-radius: 15px;
+    height: 20vh;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skills:hover {
+    color: yellow;
+    padding-bottom: 10px;
+    border: 1.5px solid white;
+  }
+  
+  .skills-img-continer {
+    flex-shrink: 0;
+    /* background-color: white; */
+    margin-right: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-img {
+    width: 5vw;
+    min-width: 50px;
+    min-height: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Styling for text container */
+  .skills-text-continer {
+    border-left: 3px solid darkgray;
+    margin: auto 0;
+    padding-left: 1px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .skills-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: goldenrod;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+  
+  .skills-desc {
+    font-size: 1rem;
+    color: azure;
+    margin-top: 8px;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out 0.2s forwards;
+  }
+  
+  /* Animation for logo hover effect */
+  .skills-img-continer:hover .skill-img {
+    transform: scale(1.1);
+  }
+  
+  /* Animation for hover effect on skill container */
+  .skills:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Fade-in keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .skills {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 15px; 
+    }
+  
+    .skills-img-continer {
+      margin-bottom: 10px;
+    }
+  
+    .skill-img {
+      width: 15vw; 
+      height: auto;
+      min-width: 50px;
+      /* min-height: 50px; */
+    }
+  
+    .skills-text-continer {
+      border-left: none;
+      padding-left: 0;
+    }
+  
+    .skills-head {
+      font-size: 1.5rem;
+      animation: fadeInMobile 0.6s ease-in-out forwards;
+    }
+  
+    .skills-desc {
+      font-size: 10pt;
+      animation: fadeInMobile 0.6s ease-in-out 0.2s forwards;
+    }
+  }
+  
+  /* Mobile fade-in animation */
+  @keyframes fadeInMobile {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

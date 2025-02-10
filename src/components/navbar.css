@@ -1,0 +1,122 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    background: rgb(30, 30,30);
+    color: white;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: 2px solid gray;
+    box-shadow: 2px gainsboro;
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+.desktopmenu{
+    display: flex;
+    gap: 20vw;
+    align-items: center;
+    
+}
+.nav-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
+    margin: 1.5vw;
+    color: azure;
+}
+
+.nav-item:hover{
+   color: yellow;
+   padding-bottom: 5px;
+   border-bottom: 2px solid yellow;
+
+}
+   .contact-icone{
+    object-fit: cover;
+    height: 1.5rem;
+}
+    .contact-btn {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 8px 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out-in;
+}
+.contact-btn:hover{
+    background-color: lightgray;
+    color:black;
+}
+
+
+.active-menu{
+    color: gold;
+    padding-bottom: 1px;
+    border-bottom:2px solid gold;
+
+  }
+  .mobmenu-container{
+    display: none;
+  }
+  .menu-bar{
+    margin-left: 5vw;
+    height: 5vh;
+    object-fit: cover;
+  }
+  .mov-nav-menu{
+    position: absolute;
+    top:4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    
+  }
+  .mob-menu-item{
+    margin: 0.5rem;
+
+  }
+  .mob-menu-item:hover{
+    cursor: pointer;
+    color: goldenrod;
+
+  }
+
+@media screen and (max-width: 750px) {
+    .desktopmenu {
+        display: none;
+    }
+
+    .mobmenu-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mov-nav-menu {
+        display: flex;
+    }
+    
+    .navbar{
+        justify-content: space-between;
+        
+    }
+}

@@ -1,0 +1,138 @@
+.prothfolio-container{
+    width: 100vw;
+    max-width: 75rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.prothfolio-text{
+    line-height: 1.8;
+    letter-spacing: .5px;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.porthfolio-title{
+    text-align: center;
+    color: goldenrod;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.prothfolio-projects{
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-container{
+    text-decoration: none;
+    background-color: rgb(23, 23, 23);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid gray;
+    text-decoration: none;
+    width: 25vw;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-container:hover {
+    color:goldenrod;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-img-container{
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-img-container:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-details{
+    color: white;
+    text-align: center;
+}
+
+.project-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-desc{
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #bbb;
+}
+@media (max-width: 1024px) {
+    .prothfolio-projects {
+        justify-content: space-evenly;
+    }
+
+    .project-container {
+        width: 30vw; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .prothfolio-projects {
+        justify-content: center;
+    }
+
+    .project-container {
+        width: 45vw; /* Adjust width for tablets */
+        
+    }
+
+    .prothfolio-text {
+        font-size: 0.95rem;
+         /* Slightly smaller text on tablets */
+    }
+
+    .porthfolio-title {
+        text-align: center;
+        font-size: 2rem; /* Adjust title size */
+    }
+}
+
+@media (max-width: 480px) {
+    .prothfolio-projects {
+        flex-direction: column; /* Stack the projects vertically */
+        align-items: center;
+    }
+
+    .project-container {
+        width: 80vw; /* Increase project container width for small screens */
+        margin: 1rem 0; /* Add margin between cards */
+    }
+
+    .prothfolio-text {
+        font-size: 0.85rem; /* Smaller text on mobile */
+    }
+
+    .porthfolio-title {
+        font-size: 1.8rem; /* Adjust title size for mobile */
+    }
+}
